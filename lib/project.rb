@@ -7,7 +7,7 @@ def Project
   end
 
   def add_backer(backer)
-    backed_projects << project
-    backers << self
+    backers << backer
+    backer.backed_projects << self
   end
 end
